@@ -1,0 +1,89 @@
+h2 {
+    border-bottom: 3px groove #0c9eff;
+    border-left: 5px groove #0c9eff;
+    margin-left: 15px;
+}
+
+.caption {
+    text-align: center;
+}
+
+#content {
+    background-image: url(../Image/essential/ac-bg.png);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: large;
+    /*add background to content*/
+}
+
+.picto {
+    background-color: white;
+}
+
+.Diary {
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 1199px) {
+    body {
+        background-repeat: repeat;
+    }
+
+    /*make the background image repeats when the screen width is lower than 1200 pixels*/
+}
+
+@media screen and (max-width: 999px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+
+    #header {
+        width: 25em;
+    }
+
+    #sidenav {
+        text-align: center;
+        list-style-type: none;
+    }
+
+    #yearset {
+        border-top: groove 2px black;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .year {
+        border: black double 5px;
+        border-radius: 25px;
+    }
+
+    blockquote {
+        clear: both;
+    }
+
+    .story {
+        margin-left: 20px;
+    }
+
+    .Diary p {
+        font-size: 1.5em;
+    }
+
+    /*make container flex column rather than grid when the screen width is lower than 1000 pixels*/
+
+}
+
+@media screen and (max-width: 399px) {
+    .Diary p {
+        font-size: 8em;
+    }
+
+    #sidenav {
+        font-size: 8em;
+    }
+    /*increase font size when the screen width is lower than 400 pixels*/
+}
